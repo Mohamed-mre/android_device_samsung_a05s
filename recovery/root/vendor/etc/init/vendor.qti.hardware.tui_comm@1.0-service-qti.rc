@@ -1,0 +1,9 @@
+on property:ro.crypto.state=encrypted && property:hwservicemanager.ready=true
+    start tui_comm-1-0
+
+service tui_comm-1-0 /vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+    class hal
+    user root
+    group root drmrpc 
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    seclabel u:r:recovery:s0
