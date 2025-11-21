@@ -192,8 +192,7 @@ TW_INCLUDE_FASTBOOTD := true
 TW_HAS_DOWNLOAD_MODE := true
 
 # Modules
-TW_LOAD_VENDOR_BOOT_MODULES := true
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules))
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 
 # Copy Out 
 TARGET_COPY_OUT_VENDOR := vendor
