@@ -32,9 +32,10 @@
 /optics             emmc      /dev/block/bootdevice/by-name/optics             flags=display=Optics;backup=1;flashimg
 
 #encryption-data
-/keydata            ext4      /dev/block/bootdevice/by-name/keydata            flags=display=Keydata;wipeingui
-/keyrefuge          f2fs      /dev/block/bootdevice/by-name/keyrefuge          flags=display=Keyrefuge;wipeingui
+#/keydata            ext4      /dev/block/bootdevice/by-name/keydata            flags=display=Keydata;wipeingui
+#/keyrefuge          f2fs      /dev/block/bootdevice/by-name/keyrefuge          flags=display=Keyrefuge;wipeingui
 
 # External storage
 /external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1			flags=display="Micro SD Card";storage;wipeingui;removable
 /usb_otg		vfat		/dev/block/sdg1 		/dev/block/sdg				flags=display="USB OTG";storage;wipeingui;removable
+
