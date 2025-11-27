@@ -185,8 +185,8 @@ TW_EXCLUDE_APEX := true
 TW_NO_BIND_SYSTEM := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone50/temp"
-TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery/capacity"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone9/temp"
+TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/capacity"
 
 # Samsung
 TW_NO_REBOOT_BOOTLOADER := true
