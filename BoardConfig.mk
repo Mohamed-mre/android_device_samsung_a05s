@@ -58,10 +58,10 @@ TW_FRAMERATE := 90
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Status Bar UI
-#TW_STATUS_ICONS_ALIGN := center
-#TW_CUSTOM_CPU_POS := "50"
-TW_CUSTOM_CLOCK_POS := "250"
-#TW_CUSTOM_BATTERY_POS := "750"
+TW_STATUS_ICONS_ALIGN := center
+TW_CUSTOM_CPU_POS := "275"
+TW_CUSTOM_CLOCK_POS := "70"
+TW_CUSTOM_BATTERY_POS := "790"
 
 # Cmdline
 BOARD_KERNEL_CMDLINE :=  \
@@ -186,7 +186,7 @@ TW_NO_BIND_SYSTEM := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone9/temp"
-TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/capacity"
+TW_USE_LEGACY_BATTERY_SERVICES := true
 
 # Samsung
 TW_NO_REBOOT_BOOTLOADER := true
