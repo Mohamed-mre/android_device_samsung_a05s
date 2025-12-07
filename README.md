@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-M145F (a05s)
+# Android device tree for samsung SM-A057(F/G/M) (a05s)
 
 # Contributors
  - [Ravindu644](https://github.com/ravindu644) - Custom Kernel Developer, Fixed touch implementation in Chipone
