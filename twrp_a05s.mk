@@ -21,15 +21,10 @@ $(call inherit-product, device/samsung/a05s/device.mk)
 PRODUCT_DEVICE := a05s
 PRODUCT_NAME := twrp_a05s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-M145F
+PRODUCT_MODEL := SM-A057F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="a05sddxx-user 13 TP1A.220624.014 M145FXXS8DYH2 release-keys"
-
-BUILD_FINGERPRINT := samsung/a05sddxx/a05s:13/TP1A.220624.014/M145FXXS8DYH2:user/release-keys
 
 # Apply JDM haptics patch before building recovery
 $(shell $(LOCAL_PATH)/apply_jdm_haptics_patch.sh >/dev/null 2>&1)
