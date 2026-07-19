@@ -1,1 +1,2 @@
-add_lunch_combo twrp_a05s-eng
+# For building with minimal manifest
+export ALLOW_MISSING_DEPENDENCIES=true
